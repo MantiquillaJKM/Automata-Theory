@@ -88,11 +88,11 @@ class AutomataTest
             string status = IsAcceptedNFA(test) ? "ACCEPTED" : "REJECTED";
             if (test.Length < 8)
             {
-                Console.WriteLine($"{test}\t\t-> {status}");
+                Console.WriteLine(test + "\t\t-> " + status);
             }
             else
             {
-                Console.WriteLine($"{test}\t-> {status}");
+                Console.WriteLine(test + "\t-> " + status);
             }
         }
 
@@ -103,7 +103,7 @@ class AutomataTest
         if (userInput != null)
         {
             string result = IsAcceptedNFA(userInput) ? "ACCEPTED" : "REJECTED";
-            Console.WriteLine($"Result: {result}");
+            Console.WriteLine("Result: " + result);
         }
     }
 }
